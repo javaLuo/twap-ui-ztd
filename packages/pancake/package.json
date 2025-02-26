@@ -15,8 +15,8 @@
   ],
   "scripts": {
     "prettier": "prettier -w '{src,test}/**/*.{ts,tsx,js,jsx,json,sol}'",
-    "build": "npm run prettier && rm -rf dist && tsc",
-    "start": "npm run prettier && nodemon --ext js,jsx,ts,tsx,json --watch ./src --exec tsc",
+    "build": "rm -rf dist && tsc",
+    "start": "nodemon --ext js,jsx,ts,tsx,json --watch ./src --exec tsc",
     "test": "eslint src"
   },
   "dependencies": {
